@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#c:plates/lead",
+    "#c:plates/nickel",
+    "#c:plates/silver",
+    "#c:plates/tin",
+    "#c:plates/bronze",
+    "#c:plates/constantan",
+    "#c:plates/electrum",
+    "#c:plates/invar"
+  ]
+}

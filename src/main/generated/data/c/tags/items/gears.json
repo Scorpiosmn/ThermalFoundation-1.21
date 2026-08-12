@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#c:gears/lead",
+    "#c:gears/nickel",
+    "#c:gears/silver",
+    "#c:gears/tin",
+    "#c:gears/bronze",
+    "#c:gears/constantan",
+    "#c:gears/electrum",
+    "#c:gears/invar",
+    "#c:gears/ruby",
+    "#c:gears/sapphire"
+  ]
+}

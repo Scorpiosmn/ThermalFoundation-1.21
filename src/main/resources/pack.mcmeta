@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": {
+      "translate": "pack.thermal_foundation.description"
+    },
+    "pack_format": 15
+  }
+}

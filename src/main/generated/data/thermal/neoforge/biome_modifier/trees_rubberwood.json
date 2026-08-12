@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      "minecraft:flower_forest",
+      "minecraft:bamboo_jungle",
+      "minecraft:sparse_jungle"
+    ]
+  },
+  "features": "thermal:trees_rubberwood",
+  "step": "vegetal_decoration"
+}

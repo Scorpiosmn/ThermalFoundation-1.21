@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "thermal:oil_red_sand"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "thermal:blocks/oil_red_sand"
+}

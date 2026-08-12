@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#c:dusts/lead",
+    "#c:dusts/nickel",
+    "#c:dusts/silver",
+    "#c:dusts/tin",
+    "#c:dusts/bronze",
+    "#c:dusts/constantan",
+    "#c:dusts/electrum",
+    "#c:dusts/invar",
+    "#c:dusts/ruby",
+    "#c:dusts/sapphire"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "thermal:apatite_ore",
+    "thermal:cinnabar_ore",
+    "thermal:tin_ore",
+    "thermal:deepslate_apatite_ore",
+    "thermal:deepslate_cinnabar_ore",
+    "thermal:deepslate_tin_ore",
+    "thermal:bronze_block",
+    "thermal:tin_block",
+    "thermal:raw_tin_block"
+  ]
+}

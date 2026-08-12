@@ -1,0 +1,12 @@
+{
+  "values": [
+    "#c:coins/lead",
+    "#c:coins/nickel",
+    "#c:coins/silver",
+    "#c:coins/tin",
+    "#c:coins/bronze",
+    "#c:coins/constantan",
+    "#c:coins/electrum",
+    "#c:coins/invar"
+  ]
+}

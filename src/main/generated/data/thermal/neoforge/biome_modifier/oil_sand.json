@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:is_overworld"
+        ]
+      },
+      {
+        "type": "neoforge:or",
+        "values": [
+          "minecraft:desert",
+          "#minecraft:is_badlands"
+        ]
+      }
+    ]
+  },
+  "features": "thermal:oil_sand",
+  "step": "underground_ores"
+}
