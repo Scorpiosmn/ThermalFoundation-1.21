@@ -2,11 +2,14 @@ package cofh.thermal.foundation.init.data.providers;
 
 import cofh.lib.init.data.RecipeProviderCoFH;
 import cofh.lib.init.tags.ItemTagsCoFH;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.Tags;
+
+import java.util.concurrent.CompletableFuture;
 
 import static cofh.lib.util.constants.ModIds.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.ITEMS;
@@ -15,9 +18,9 @@ import static net.minecraft.data.recipes.RecipeCategory.MISC;
 
 public class TFndRecipeProvider extends RecipeProviderCoFH {
 
-    public TFndRecipeProvider(PackOutput output) {
+    public TFndRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
 
-        super(output, ID_THERMAL);
+        super(output, registries, ID_THERMAL);
     }
 
     @Override

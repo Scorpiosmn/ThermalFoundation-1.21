@@ -1,5 +1,6 @@
 package cofh.thermal.foundation;
 
+import cofh.thermal.foundation.init.data.TFndDataGen;
 import cofh.thermal.foundation.init.registries.TFndBlocks;
 import cofh.thermal.foundation.init.registries.TFndEntities;
 import cofh.thermal.foundation.init.registries.TFndItems;
@@ -38,6 +39,7 @@ public class ThermalFoundation {
 
         setFeatureFlags();
 
+        modEventBus.addListener(TFndDataGen::gatherData);
         modEventBus.addListener(this::entityLayerSetup);
         modEventBus.addListener(this::entityRendererSetup);
         modEventBus.addListener(this::commonSetup);

@@ -3,7 +3,7 @@ package cofh.thermal.foundation.common.event;
 import cofh.thermal.core.common.config.ThermalCoreConfig;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.BasicItemListing;
 import net.neoforged.neoforge.event.village.WandererTradesEvent;
 
@@ -12,7 +12,7 @@ import static cofh.lib.util.constants.ModIds.ID_THERMAL_FOUNDATION;
 import static cofh.thermal.core.ThermalCore.ITEMS;
 import static cofh.thermal.foundation.init.registries.TFndIDs.ID_RUBBERWOOD_SAPLING;
 
-@Mod.EventBusSubscriber (modid = ID_THERMAL_FOUNDATION)
+@EventBusSubscriber (modid = ID_THERMAL_FOUNDATION)
 public class TFndCommonSetupEvents {
 
     //    @SubscribeEvent
@@ -26,7 +26,14 @@ public class TFndCommonSetupEvents {
     @SubscribeEvent
     public static void setupWandererTrades(final WandererTradesEvent event) {
 
-        if (!ThermalCoreConfig.enableWandererTrades.get()) {
+        boolean enableWandererTrades;
+        try {
+            enableWandererTrades = ThermalCoreConfig.enableWandererTrades.get();
+        } catch (IllegalStateException e) {
+            // Trade events may fire during the initial data reload before the server config is loaded.
+            enableWandererTrades = true;
+        }
+        if (!enableWandererTrades) {
             return;
         }
         event.getRareTrades().add(new BasicItemListing(cloneStack(Items.EMERALD, 8), cloneStack(ITEMS.get(ID_RUBBERWOOD_SAPLING)), 8, 1, 0.05F));
