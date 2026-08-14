@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_recycle",
   "ingredient": {
-    "tag": "forge:armor/nickel"
+    "tag": "c:armor/nickel"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 1.2,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:armor/nickel",
+      "tag": "c:armor/nickel",
       "type": "cofh_core:tag_exists"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "type": "thermal:smelter_recycle",
   "ingredient": {
-    "tag": "forge:tools/electrum"
+    "tag": "c:tools/electrum"
   },
   "result": [
     {
@@ -10,9 +10,9 @@
     }
   ],
   "experience": 0.4,
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "tag": "forge:tools/electrum",
+      "tag": "c:tools/electrum",
       "type": "cofh_core:tag_exists"
     }
   ]
