@@ -34,11 +34,12 @@ jobs:
       # ================= 装配 ThermalCore =================
       - name: Install local ThermalCore to maven
         run: |
-          M2_DIR=$HOME/.m2/repository/com/teamcofh/thermal_core/1.21.1-11.0.7
+          M2_DIR=$HOME/.m2/repository/com/teamcofh/thermal_core/1.21.1-11.0.7.0
           mkdir -p $M2_DIR
-          find local_libs -name "thermal_core-*.jar" -exec cp {} $M2_DIR/thermal_core-1.21.1-11.0.7.jar \;
-          echo '<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion><groupId>com.teamcofh</groupId><artifactId>thermal_core</artifactId><version>1.21.1-11.0.7</version></project>' > $M2_DIR/thermal_core-1.21.1-11.0.7.pom
-
+          find local_libs -name "thermal_core-*.jar" -exec cp {} $M2_DIR/thermal_core-1.21.1-11.0.7.0.jar \;
+          echo '<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion><groupId>com.teamcofh</groupId><artifactId>thermal_core</artifactId><version>1.21.1-11.0.7.0</version></project>' > $M2_DIR/thermal_core-1.21.1-11.0.7.0.pom
+          ls -la $M2_DIR
+      
       # ================= 构建 ThermalFoundation =================
       - name: Build ThermalFoundation
         run: |
